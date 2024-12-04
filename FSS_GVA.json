@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "UK FSS GVA relative to GDP",
+    "text": "Financial and insurance GVA relative to GDP - United Kingdom",
     "subtitle": ["in %"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
