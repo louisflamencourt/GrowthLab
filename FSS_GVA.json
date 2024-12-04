@@ -92,7 +92,7 @@
     }
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/FSS%20GVA.csv",
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/FSS_GVA.csv",
     "format": {
       "type": "csv"
     }
