@@ -18,7 +18,23 @@
     "font": "Circular Std Book",
     "mark": {"line": {"interpolate": "linear"}},
     "view": {"stroke": "transparent", "width": 400, "height": 300},
-    "range": {},
+    "range": {
+      "category": [
+        "#001f3f",
+        "#4269d0",
+        "#efb118",
+        "#ff725c",
+        "#6cc5b0",
+        "#3ca951",
+        "#ff8ab7",
+        "#a463f2",
+        "#97bbf5",
+        "#9c6b4e"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
     "axisX": {
       "labelColor": "#122b39",
       "tickColor": "#122b39",
@@ -61,7 +77,25 @@
       "encoding": {
         "y": {"field": "Sector", "type": "nominal", "sort": "-x", "title": ""},
         "x": {"field": "GVA 2022 (%)", "type": "quantitative", "title": ""},
-        "color": {"value": "#1f77b4"}
+        "color": {
+          "condition": [
+            {"test": "datum.Sector === ' Financial and insurance'", "value": "#001f3f"}
+          ],
+          "value": "rgb(169,192,222)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 3
+      },
+      "encoding": {
+        "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
+        "x": {"field": "GVA 2022 (%)", "type": "quantitative"},
+        "text": {"field": "GVA 2022 (%)", "type": "quantitative"}
       }
     }
   ],
