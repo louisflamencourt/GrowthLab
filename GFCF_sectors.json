@@ -16,8 +16,8 @@
   "height": 300,
   "config": {
     "font": "Circular Std Book",
-    "mark": {"line": {"interpolate": "linear"}},
-    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "line": {"interpolate": "linear"},
+    "view": {"stroke": "transparent", "continuousWidth": 400, "continuousHeight": 300},
     "range": {
       "category": [
         "#001f3f",
@@ -71,10 +71,14 @@
       "mark": {"type": "line"},
       "encoding": {
         "x": {"field": "Year", "type": "temporal", "title": ""},
-        "y": {"field": "Value", "type": "quantitative", "title": ""},
+        "y": {"field": "Value", "type": "quantitative",
+        "title": "",
+        "scale": {"domain": [0, 70]}
+        },
         "color": {
           "field": "Sector",
           "type": "nominal",
+          "legend": null,
           "scale": {
             "domain": [
               "Dwellings (excl. land)",
@@ -102,14 +106,41 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": -15,
-        "dy": -5
+        "dx": 5,
+        "dy": {
+          "expr": "{'Intellectual property products': -7, 'Information communication technology': -7, \"Transport equipment\": -10, \"Buildings and infrastructure\": 2, \"Ownership costs of non-produced assets\": -7, \"Dwellings (excl. land)\": 1}[datum.Sector]"
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Sector", "type": "nominal"},
+        "color": {
+          "field": "Sector",
+          "type": "nominal"
+        }
+      },
+      "transform": [
+        {"filter": "datum.Year == 1672531200000"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": {
+          "expr": "{'Intellectual property products': 3, 'Information communication technology': 3, \"Transport equipment\": -1, \"Buildings and infrastructure\": 11, \"Ownership costs of non-produced assets\": 2, \"Dwellings (excl. land)\": 10}[datum.Sector]"
+        }
       },
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
         "text": {"field": "Value", "type": "quantitative"},
-        "color": {"value": "#000000"}
+        "color": {
+          "field": "Sector",
+          "type": "nominal"
+        }
       },
       "transform": [
         {"filter": "datum.Year == 1672531200000"}
