@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Net Acquisition of Financial Assets",
+    "text": "Financial Corporations Accounts: Net Acquisition of Financial Assets",
     "subtitle": ["in £ billion (current prices)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
