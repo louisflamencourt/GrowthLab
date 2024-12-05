@@ -66,6 +66,15 @@
       "titleY": -7
     }
   },
+  "data": {
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/GFCF_sectors.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": "datum.Sector != 'Dwellings (excl. land)'"
+    }
+  ],
   "layer": [
     {
       "mark": {"type": "line"},
@@ -73,7 +82,7 @@
         "x": {"field": "Year", "type": "temporal", "title": ""},
         "y": {"field": "Value", "type": "quantitative",
         "title": "",
-        "scale": {"domain": [0, 70]}
+        "scale": {"domain": [0, 65]}
         },
         "color": {
           "field": "Sector",
@@ -146,9 +155,5 @@
         {"filter": "datum.Year == 1672531200000"}
       ]
     }
-  ],
-  "data": {
-    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/GFCF_sectors.csv",
-    "format": {"type": "csv"}
-  }
+  ]
 }
