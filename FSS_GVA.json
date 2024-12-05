@@ -46,7 +46,6 @@
       "labelFontSize": 11,
       "domainOpacity": 0.5,
       "tickSize": 0,
-      "title": null,
       "titleAlign": "left",
       "titleAngle": 0,
       "titleBaseline": "bottom",
@@ -80,14 +79,14 @@
       },
       "transform": [
         {
-          "filter": "datum.Year == 2022"
+          "filter": "datum.Year == 852076800000 || datum.Year == 1230768000000 || datum.Year == 1640995200000"
         }
       ],
       "encoding": {
         "text": {"field": "Value", "type": "quantitative"},
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
-        "color": {"value": "#1f77b4"}
+        "color": {"value": "#000000"}
       }
     }
   ],
