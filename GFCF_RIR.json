@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Total GFCF Investment to Real Interest Rates - UK and Peers",
+    "subtitle": [""],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "width": 450,
+  "height": 300,
+  "config": {
+    "font": "Circular Std Book",
+    "mark": {"line": {"interpolate": "linear"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#4269d0",
+        "#efb118",
+        "#ff725c",
+        "#001f3f",
+        "#6cc5b0"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/GFCF_RIR.csv"
+  },
+  "layer": [
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {"field": "real_interest_rate", "type": "quantitative", "title": "Real Interest Rate (%)"},
+        "y": {"field": "GFCF", "type": "quantitative", "title": "Total GFCF investment (%GDP)"},
+        "color": {"field": "country", "type": "nominal"},
+        "tooltip": [
+          {"field": "country", "type": "nominal"},
+          {"field": "year", "type": "temporal"},
+          {"field": "real_interest_rate", "type": "quantitative"},
+          {"field": "GFCF", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "real_interest_rate", "type": "quantitative"},
+        "y": {"field": "GFCF", "type": "quantitative"},
+        "color": {"value": "#122b39"},
+        "size": {"value": 2}
+      },
+      "transform": [
+        {"regression": "GFCF", "on": "real_interest_rate"}
+      ]
+    }
+  ]
+}
