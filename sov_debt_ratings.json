@@ -16,8 +16,8 @@
   "height": 300,
   "config": {
     "font": "Circular Std Book",
-    "mark": {"line": {"interpolate": "linear"}},
-    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "line": {"interpolate": "linear"},
+    "view": {"stroke": "transparent", "continuousWidth": 400, "continuousHeight": 300},
     "range": {
       "category": [
         "#001f3f",
@@ -176,12 +176,6 @@
         }
       }
     },
-    {
-      "mark": {"type": "rule", "color": "lightgrey"},
-      "encoding": {
-        "y": {"datum": 0}
-      }
-    }
   ],
   "data": {
     "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/sov_debt_ratings.csv"
