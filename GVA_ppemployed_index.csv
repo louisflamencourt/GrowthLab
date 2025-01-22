@@ -1,0 +1,245 @@
+Country,Year,Value
+Germany,1991,108.81
+Germany,1992,108.66
+United Kingdom,2008,115.47
+United Kingdom,2009,112.64
+United Kingdom,2010,114.85
+France,1959,39.17
+France,1960,39.1
+United Kingdom,1995,65.83
+United Kingdom,1996,69.61
+United Kingdom,1997,73.13
+United Kingdom,1998,75.14
+United Kingdom,1999,72.71
+United Kingdom,2000,75.96
+United Kingdom,2001,73.67
+United Kingdom,2002,76.78
+United Kingdom,2003,79.97
+United Kingdom,2023,107.21
+United Kingdom,1994,64.29
+United Kingdom,2014,103.54
+United Kingdom,2015,100
+United Kingdom,2016,106.98
+United Kingdom,2017,115.31
+United Kingdom,2018,111.55
+United Kingdom,2019,107.62
+United Kingdom,2020,105.03
+United Kingdom,2021,106.37
+Japan,2022,118.4
+Japan,2000,87.26
+Japan,1994,83.38
+Japan,1995,79.31
+Japan,1996,82.57
+Japan,1997,86.08
+Japan,1998,82.09
+Japan,1999,83.36
+Japan,2001,89.02
+Japan,2002,87.03
+Japan,2003,90.77
+Japan,2004,89.89
+Japan,2005,92.5
+Japan,2006,94.91
+United Kingdom,2011,107.02
+United Kingdom,2012,107.52
+United Kingdom,2013,104.32
+Japan,2014,96.81
+Japan,2015,100
+Japan,2016,93.19
+Japan,2017,92.46
+Japan,2018,94.87
+Japan,2019,92.19
+Japan,2020,97.11
+Spain,1995,59.95
+Spain,1996,63
+Spain,2010,125.39
+Spain,2011,123.72
+Spain,2012,117.63
+Spain,2013,108.44
+Spain,2014,105.41
+Spain,2015,100
+Spain,1997,66.12
+Spain,1998,71.2
+Spain,1999,75.19
+Spain,2000,81.54
+Spain,2001,89.31
+Spain,2002,93.38
+Spain,2003,96.3
+Spain,2004,104.92
+Spain,2005,115.49
+Spain,2006,125.53
+Spain,2007,131.18
+Spain,2008,135.04
+Spain,2009,128.51
+Spain,2016,103.07
+Spain,2017,103.18
+Spain,2018,109.17
+Spain,2019,108.16
+Spain,2020,112.75
+Spain,2021,111.4
+Spain,2022,116.9
+Germany,2003,97.14
+Germany,2004,91.5
+Germany,2018,99.06
+Germany,2019,104.21
+Germany,2020,107.26
+Germany,2021,115.96
+Germany,2022,108.47
+Germany,2023,107.7
+Germany,2005,90.61
+Germany,2006,88.41
+Germany,2007,90.69
+Germany,2008,89.67
+United Kingdom,2004,84.33
+United Kingdom,2005,96.64
+United Kingdom,2006,94.04
+United Kingdom,2007,115.13
+Germany,1993,112.34
+Germany,1994,112.68
+Germany,1995,109.93
+Germany,1996,112.08
+Germany,1997,114.1
+Germany,1998,115.18
+Germany,1999,122.34
+Germany,2000,112.81
+Germany,2001,118.1
+Italy,1997,85.05
+Italy,1998,84.01
+Italy,2012,103.07
+Italy,2013,102.18
+Italy,2014,101.51
+Italy,2015,100
+Italy,2016,99.44
+Italy,2017,101.25
+Italy,1999,81.39
+Italy,2000,86.8
+Italy,2001,85.18
+Italy,2002,80.26
+Italy,2003,80.94
+Italy,2004,82.42
+Italy,2005,87.27
+Italy,2006,89.06
+Italy,2007,92.16
+Italy,2008,91.14
+Italy,2009,91.85
+Italy,2010,97.24
+Italy,2011,101.56
+Italy,2018,103.65
+Italy,2019,103.34
+Italy,2020,104.07
+Italy,2021,104.77
+Italy,2022,103.95
+Italy,2023,96.66
+Italy,1992,74.69
+Italy,1993,83.29
+Italy,1994,82.72
+Italy,1995,78.72
+France,1975,45.34
+France,1976,47.15
+France,2018,104.47
+France,2019,105.42
+France,2020,103.81
+France,2021,111.62
+France,2022,113.55
+France,2023,108.6
+France,2005,83.34
+France,2006,80.36
+France,2007,84.43
+France,2008,85.85
+France,2009,92.99
+France,2010,93.29
+France,2011,98.67
+France,2012,99.77
+France,2013,99.91
+France,2014,100.57
+France,2015,100
+France,2016,98.79
+France,2017,98.69
+France,1977,44.99
+France,1978,45.71
+France,1979,47.61
+France,1980,51.06
+France,1981,56.16
+France,1982,56.24
+France,1983,59.18
+France,1984,60.43
+France,1985,59.55
+France,1986,60.38
+France,1987,61.89
+France,1988,63.81
+France,1989,69.44
+France,1990,65.66
+France,1991,68.16
+France,1992,66.82
+France,1993,72.23
+France,1994,72.96
+France,1995,68.92
+France,1996,70.5
+France,1997,68.85
+France,1998,71.1
+France,1999,75.95
+France,2000,81.69
+France,2001,77.03
+France,2002,78.29
+France,2003,79.19
+France,2004,84.21
+France,1950,27.18
+France,1951,29.69
+France,1952,28.82
+France,1953,32.74
+France,1954,33.22
+France,1955,34.54
+France,1956,33.24
+France,1957,38.03
+France,1958,40.67
+Japan,2007,99.44
+Japan,2008,81.54
+Japan,2009,81.95
+Japan,2010,84.15
+Japan,2011,83.44
+Japan,2012,84.03
+Japan,2013,91.49
+France,1961,38
+France,1962,35.39
+France,1963,35.95
+France,1964,38.37
+France,1965,40.28
+France,1966,40.56
+France,1967,41.39
+France,1968,41.85
+France,1969,43.6
+France,1970,44.42
+France,1971,43.96
+France,1972,43.3
+France,1973,45.39
+Canada,2016,102.97
+Canada,2017,110.67
+Canada,2018,114.73
+Canada,2019,115.38
+Canada,2020,124.23
+Canada,2021,122.05
+Canada,2022,126.31
+Canada,2023,121.74
+Canada,2007,87.8
+Canada,2008,85.78
+Canada,2009,87.2
+Canada,2010,86.18
+Canada,2011,87.05
+Canada,2012,90.09
+Canada,2013,92.49
+Canada,2014,94.11
+United Kingdom,2022,110.21
+Japan,2021,105.13
+Spain,2023,115.88
+Germany,2002,112.51
+Italy,1996,83.14
+France,1974,49.99
+Canada,2015,100
+Germany,2009,84.54
+Germany,2010,91
+Germany,2011,96.84
+Germany,2012,95.42
+Germany,2013,101.64
+Germany,2014,98.02
+Germany,2015,100
+Germany,2016,97.6
+Germany,2017,103.73
