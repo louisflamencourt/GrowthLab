@@ -1,0 +1,210 @@
+﻿Country,Year,Value
+France,2000,9.92
+France,2001,-4.36
+Canada,2018,3.31
+Canada,2019,0.59
+Canada,2020,7.25
+United Kingdom,2020,-1.61
+France,1953,14.16
+Canada,2008,-3.1
+Canada,2009,2.89
+Canada,2010,-0.98
+Canada,2011,1.39
+Canada,2012,1.79
+Canada,2013,3.01
+Canada,2014,1.26
+Germany,2023,-0.41
+Germany,1998,0.97
+Canada,2016,2.18
+Canada,2017,9.63
+Germany,1996,2.31
+Germany,1997,2.2
+Germany,1999,6.66
+Germany,2000,-6.87
+Germany,2001,5.29
+Germany,2002,-4.17
+Germany,2003,-13.42
+Germany,2004,-5.65
+Germany,2005,-0.39
+Germany,2006,-4.07
+Germany,2007,3.28
+Germany,2008,0.01
+Germany,2009,-4.01
+Germany,2010,6.85
+Germany,2011,6.67
+Germany,2012,-0.22
+Germany,2013,6.73
+Germany,2014,-3.65
+Germany,2015,1.93
+Germany,2016,-2.47
+Germany,2017,7.09
+Germany,2018,-3.44
+Canada,2021,-2.05
+Canada,2022,4.68
+Canada,2023,-3.64
+Spain,2023,-0.01
+Spain,2005,10.62
+Spain,2006,8.35
+Spain,2007,5.27
+Spain,2008,2.8
+Spain,2009,-4.05
+Spain,2010,-1.26
+Spain,2011,-2.08
+Spain,2012,-4.42
+Spain,2013,-6.61
+Spain,2014,-2.94
+Spain,2015,-4.28
+Spain,2016,2.03
+Spain,2017,0.59
+Spain,1996,6.03
+Spain,1997,5.26
+Spain,1998,7.94
+Spain,1999,5.51
+Spain,2000,8.71
+Spain,2001,10.24
+Spain,2002,3.86
+Spain,2003,3.39
+Spain,2004,8.95
+United Kingdom,2021,-0.96
+United Kingdom,2022,3.47
+United Kingdom,2007,20.89
+United Kingdom,2008,0.74
+United Kingdom,2009,-3.82
+United Kingdom,2010,0.73
+United Kingdom,2011,-9.14
+United Kingdom,2012,-0.3
+United Kingdom,2023,-3.35
+United Kingdom,1995,2.36
+United Kingdom,1996,5.01
+United Kingdom,1997,5.88
+United Kingdom,1998,0.97
+United Kingdom,1999,-3.6
+United Kingdom,2000,5.58
+United Kingdom,2001,-2.77
+United Kingdom,2002,5.5
+United Kingdom,2003,4.34
+United Kingdom,2004,6.22
+United Kingdom,2005,11.1
+United Kingdom,2006,-1.88
+United Kingdom,2013,-2.49
+United Kingdom,2014,-1.04
+United Kingdom,2015,-0.24
+Germany,1992,0.96
+Germany,1993,5.96
+Germany,1994,2.53
+Germany,1995,-2.12
+France,2002,3.18
+France,1984,2.23
+France,1985,-0.3
+France,1986,1.37
+France,1987,1.55
+France,1988,1.86
+France,1989,10.11
+France,1990,-6.56
+France,1991,4.26
+France,1992,-2.17
+France,1993,8.26
+France,1994,0.71
+France,1995,-4.51
+France,1996,2.15
+France,1956,-1.64
+France,1957,15.91
+France,1958,7.79
+France,1959,-3.69
+France,1960,-0.63
+France,1961,-1.79
+France,1962,-7.87
+France,1963,2.25
+France,1964,6.36
+France,1965,5.03
+France,1966,1
+France,1967,3.05
+France,1968,4.6
+France,1969,8.19
+France,1970,2.4
+France,1971,-0.59
+France,1972,0.21
+France,1973,4.25
+France,1974,11.34
+France,1975,-10.06
+France,1976,1.07
+France,1977,-3.46
+France,1978,2.26
+France,1979,2.82
+France,1980,7.56
+France,1981,10.3
+France,1982,4.29
+France,1983,6.09
+France,2003,-0.22
+France,2004,3.63
+France,2005,-0.05
+France,2006,-2.15
+France,2007,4.33
+France,2008,0.75
+France,2009,8.44
+France,2010,-0.38
+France,2011,4.91
+France,2012,0.61
+France,2013,1.21
+France,2014,1.35
+France,2015,-1.39
+France,2016,-0.86
+France,2017,1.04
+France,2018,5.1
+France,2019,1.25
+France,2020,1.28
+France,2021,5.44
+France,2022,1.19
+France,2023,-2.82
+France,1951,8.38
+France,1952,-2.47
+Italy,2003,0.35
+Italy,2004,4.41
+Italy,2018,2.04
+Italy,2019,-0.22
+Italy,2020,4.77
+Italy,2021,-5.1
+Italy,2022,1.7
+Italy,2023,-7.63
+Italy,2005,4.51
+Italy,2006,2.97
+Italy,2007,2.95
+Italy,2008,-2.22
+Italy,2009,0.77
+Italy,2010,5.99
+Italy,2011,3.81
+Italy,2012,2.99
+Italy,2013,-0.03
+Italy,2014,0.5
+Italy,2015,-1.9
+Italy,2016,-0.28
+Italy,2017,1.54
+Italy,1993,11.14
+Italy,1994,-0.79
+Italy,1995,-3.62
+Italy,1996,5.24
+Italy,1997,3.26
+Italy,1998,-2.37
+Italy,1999,-3.38
+Italy,2000,8.25
+Italy,2001,-1.61
+Canada,2015,5.76
+Germany,2022,-5
+Spain,2018,5.74
+Germany,2019,5.62
+Germany,2020,5.29
+Germany,2021,5.61
+Spain,2019,-6.02
+Spain,2020,5.41
+Spain,2021,-2.61
+Spain,2022,9.43
+Italy,2002,-4.97
+United Kingdom,2016,3.28
+United Kingdom,2017,9.47
+United Kingdom,2018,-3.91
+United Kingdom,2019,-3.13
+France,1954,0.7
+France,1955,4.45
+France,1997,-2.12
+France,1998,4.27
+France,1999,6.27
