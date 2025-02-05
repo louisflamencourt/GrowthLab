@@ -1,0 +1,138 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK Financial Corporations Financial Assets",
+    "subtitle": ["in £ billions"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "width": 450,
+  "height": 300,
+  "config": {
+    "font": "Circular Std Book",
+    "line": {"interpolate": "linear"},
+    "view": {"stroke": "transparent", "continuousWidth": 400, "continuousHeight": 300},
+    "range": {
+      "category": [
+        "#001f3f",
+        "#4269d0",
+        "#efb118",
+        "#ff725c",
+        "#6cc5b0",
+        "#3ca951",
+        "#ff8ab7"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std Book",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std Book",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/FSS_assets.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "fold": [
+        "Currency and deposits",
+        "Debt securities",
+        "Loans",
+        "Equity and investment fund shares",
+        "Insurance, pension schemes",
+        "Financial derivatives"
+      ],
+      "as": ["Category", "Value"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal", "title": ""},
+        "y": {"field": "Value", "type": "quantitative", "title": ""},
+        "color": {
+          "field": "Category",
+          "type": "nominal",
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": {
+          "expr": "{'Currency and deposits': 0, 'Debt securities': 0, 'Loans': -10, 'Equity and investment fund shares': 8, 'Insurance, pension schemes': 0, 'Financial derivatives': 20}[datum.Category]"
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Category", "type": "nominal"},
+        "color": {"field": "Category", "type": "nominal"}
+      },
+      "transform": [
+        {"filter": "datum.Year == 1672531200000"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": {
+          "expr": "{'Currency and deposits': 10, 'Debt securities': 10, 'Loans': 0, 'Equity and investment fund shares': 18, 'Insurance, pension schemes': 10, 'Financial derivatives': 30}[datum.Category]"
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Value", "type": "quantitative"},
+        "color": {"field": "Category", "type": "nominal"}
+      },
+      "transform": [
+        {"filter": "datum.Year == 1672531200000"}
+      ]
+    }
+  ]
+}
