@@ -76,12 +76,21 @@
     "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/NLB_G7.csv",
     "format": {"type": "csv"}
   },
+  "transform": [{"calculate": "datum.Value /100", "as": "Value"}],
   "layer": [
     {
       "mark": {"type": "line"},
       "encoding": {
         "x": {"field": "Year", "type": "temporal", "title": ""},
-        "y": {"field": "Value", "type": "quantitative", "title": ""},
+        "y": {
+          "field": "Value",
+          "axis": {
+            "format": "%",
+            "labelExpr": "datum.label + (datum.value == 0.1 ? ' of GDP' : '')"
+          },
+          "type": "quantitative",
+          "title": ""
+        },
         "color": {
           "field": "Country",
           "type": "nominal",
@@ -110,11 +119,17 @@
           }
         },
         "size": {
-          "condition": {"test": "(datum.Country === 'United Kingdom')", "value": 2},
+          "condition": {
+            "test": "(datum.Country === 'United Kingdom')",
+            "value": 2
+          },
           "value": 1.5
         },
         "strokeDash": {
-          "condition": {"test": "(datum.Country === 'United Kingdom')", "value": [0, 0]},
+          "condition": {
+            "test": "(datum.Country === 'United Kingdom')",
+            "value": [0, 0]
+          },
           "value": [5, 2]
         }
       }
@@ -128,9 +143,7 @@
           "expr": "{\"Italy\": -3, \"United States\": 0, \"Canada\": 10, \"United Kingdom\": 0, \"Spain\": 0, \"France\": 3, \"Japan\": -10, \"Germany\": 0}[datum.Country]"
         }
       },
-      "transform": [
-        {"filter": "year(datum.Year) == 2022"}
-      ],
+      "transform": [{"filter": "year(datum.Year) == 2022"}],
       "encoding": {
         "x": {"value": 450},
         "y": {"field": "Value", "type": "quantitative"},
@@ -163,7 +176,10 @@
           }
         },
         "size": {
-          "condition": {"test": "(datum.Country === 'United Kingdom')", "value": 14},
+          "condition": {
+            "test": "(datum.Country === 'United Kingdom')",
+            "value": 14
+          },
           "value": 12
         }
       }
