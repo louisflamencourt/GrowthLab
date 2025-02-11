@@ -114,7 +114,7 @@
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Value", "type": "quantitative", "format": ".1f"},
         "color": {"field": "Sector", "type": "nominal"}
       },
       "transform": [
