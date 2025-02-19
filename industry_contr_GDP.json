@@ -115,11 +115,13 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 3,
-        "color": "#676A86"
+        "text": {"expr": "datum.Value+' %'"},
+        "dx": 5
       },
       "encoding": {
-        "text": {"field": "Value", "type": "quantitative"}
+        "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Value",
+         "type": "quantitative"},
       }
     }
   ]
