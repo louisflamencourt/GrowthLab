@@ -43,12 +43,13 @@
       "gridOpacity": 0,
       "labelFont": "Circular Std Book",
       "labelAngle": 0,
-      "labelAlign": "center",
+      "labelAlign": {"expr": "datum.value == 12 ? 'left' : 'center'"},
       "labelFontSize": 11,
       "labelPadding": 5,
       "tickCount": 10,
       "tickSize": 0,
-      "title": ""
+      "title": "",
+      "labelExpr": "datum.value+'%' + (datum.value == 12 ? ' of GDP' : '')"
     },
     "axisY": {
       "labelColor": "#122b39",
