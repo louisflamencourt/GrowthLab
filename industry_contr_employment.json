@@ -49,7 +49,7 @@
       "tickCount": 10,
       "tickSize": 0,
       "title": "",
-      "labelExpr": "datum.value+'%' + (datum.value == 12 ? ' of GDP' : '')"
+      "labelExpr": "datum.value+'%' + (datum.value == 12 ? ' of jobs' : '')"
     },
     "axisY": {
       "labelColor": "#122b39",
