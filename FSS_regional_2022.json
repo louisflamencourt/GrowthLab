@@ -43,7 +43,7 @@
   },
   "title": {
     "text": "Financial and Insurance Sector GVA Size by UK ITL1 Regions",
-    "subtitle": ["As a share of total FSS GVA (%)"],
+    "subtitle": ["as a share of total FSS GVA (%)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -108,7 +108,7 @@
       "mark": {
         "type": "geoshape",
         "stroke": "black",
-        "strokeWidth": 0.5
+        "strokeWidth": 0.2
       }
     },
     {
