@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Industries contribution to employment",
-    "subtitle": ["% of Total Jobs"],
+    "subtitle": ["% of total jobs"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -115,11 +115,13 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 3,
-        "color": "#676A86"
+        "text": {"expr": "datum.Value+' %'"},
+        "dx": 5
       },
       "encoding": {
-        "text": {"field": "Value", "type": "quantitative"}
+        "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Value",
+         "type": "quantitative"},
       }
     }
   ]
