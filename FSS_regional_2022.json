@@ -1,8 +1,49 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Circular Std Book",
+    "mark": {"line": {"interpolate": "linear"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {},
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std Book",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std Book",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
   "title": {
     "text": "Financial and Insurance Sector GVA Size by UK ITL1 Regions",
-    "subtitle": ["As a percentage of total FSS GVA (%)"],
+    "subtitle": ["As a share of total FSS GVA (%)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -48,52 +89,44 @@
     "color": {
       "field": "Value",
       "type": "quantitative",
-      "scale": {"scheme": "blues"}
+      "legend": {
+        "title": "% of total GVA",
+        "labelExpr": "datum.value+'%'"
+      },
+      "scale": {
+        "type": "sqrt",
+        "scheme": "yellowgreenblue"
+      }
     },
     "tooltip": [
       {"field": "properties.ITL121NM", "type": "nominal", "title": "Region"},
       {"field": "Value", "type": "quantitative", "title": "Financial Sector Size"}
     ]
   },
-  "config": {
-    "font": "Circular Std Book",
-    "mark": {"line": {"interpolate": "linear"}},
-    "view": {"stroke": "transparent", "width": 400, "height": 300},
-    "range": {},
-    "axisX": {
-      "labelColor": "#122b39",
-      "tickColor": "#122b39",
-      "domainColor": "#122b39",
-      "domainOpacity": 0.5,
-      "gridOpacity": 0,
-      "labelFont": "Circular Std Book",
-      "labelAngle": 0,
-      "labelAlign": "center",
-      "labelFontSize": 11,
-      "labelPadding": 5,
-      "tickCount": 10,
-      "tickSize": 0,
-      "title": ""
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.5
+      }
     },
-    "axisY": {
-      "labelColor": "#122b39",
-      "labelFont": "Circular Std Book",
-      "tickColor": "#122b39",
-      "domainColor": "#122b39",
-      "gridColor": "#122b39",
-      "gridDash": [1, 5],
-      "gridOpacity": 0.5,
-      "labelPadding": 5,
-      "labelFontSize": 11,
-      "domainOpacity": 0.5,
-      "tickSize": 0,
-      "titleAlign": "left",
-      "titleAngle": 0,
-      "titleBaseline": "bottom",
-      "titleColor": "#122b39",
-      "titleOpacity": 0.9,
-      "titleX": 0,
-      "titleY": -7
+    {
+      "mark": {
+        "type": "text",
+        "color": "black",
+        "font": "Circular Std Book",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "dx": 340,
+        "dy": 260,
+        "text": {"expr": "format(datum.Value, '.2f')+'%'"}
+      },
+      "encoding": {
+        "longitude": {"field": "properties.longitude", "type": "quantitative"},
+        "latitude": {"field": "properties.latitude", "type": "quantitative"}
+      },
+      "transform": [{"filter": "datum.properties.ITL121NM === 'London'"}]
     }
-  }
+  ]
 }
