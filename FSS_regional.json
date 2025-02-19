@@ -1,10 +1,52 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "config": {
+        "font": "Circular Std Book",
+        "mark": {"line": {"interpolate": "linear"}},
+        "view": {"stroke": "transparent", "width": 400, "height": 300},
+        "range": {},
+        "axisX": {
+          "labelColor": "#122b39",
+          "tickColor": "#122b39",
+          "domainColor": "#122b39",
+          "domainOpacity": 0.5,
+          "gridOpacity": 0,
+          "labelFont": "Circular Std Book",
+          "labelAngle": 0,
+          "labelAlign": "center",
+          "labelFontSize": 11,
+          "labelPadding": 5,
+          "tickCount": 10,
+          "tickSize": 0,
+          "title": ""
+        },
+        "axisY": {
+          "labelColor": "#122b39",
+          "labelFont": "Circular Std Book",
+          "tickColor": "#122b39",
+          "domainColor": "#122b39",
+          "gridColor": "#122b39",
+          "gridDash": [1, 5],
+          "gridOpacity": 0.5,
+          "labelPadding": 5,
+          "labelFontSize": 11,
+          "domainOpacity": 0.5,
+          "tickSize": 0,
+          "titleAlign": "left",
+          "titleAngle": 0,
+          "titleBaseline": "bottom",
+          "titleColor": "#122b39",
+          "titleOpacity": 0.9,
+          "titleX": 0,
+          "titleY": -7
+        }
+      },
   "hconcat": [
     {
       "title": {
         "text": "FSS GVA Size by UK ITL1 Regions (1998)",
-        "subtitle": ["in 2019 money value (£ billion)"],
+        "subtitle": "in 2019 money value (£ bn)",
+        "font": "Circular Std Book",
         "color": "#122b39E6",
         "subtitleColor": "#676A86",
         "anchor": "start",
@@ -46,13 +88,19 @@
           "mark": {
             "type": "geoshape",
             "stroke": "black",
-            "strokeWidth": 0.5
+            "strokeWidth": 0.2
           },
           "encoding": {
             "color": {
               "field": "GVA_1998",
               "type": "quantitative",
-              "scale": {"scheme": "blues"}
+              "legend": {
+                "title": "GVA",
+                "labelExpr": "'£'+datum.value+' bn'"
+              },
+              "scale": {
+              "type": "sqrt",
+              "scheme": "yellowgreenblue"}
             },
             "tooltip": [
               {"field": "properties.ITL121NM", "type": "nominal", "title": "Region"},
@@ -64,13 +112,15 @@
           "mark": {
             "type": "text",
             "color": "black",
+            "font": "Circular Std Book",
             "fontSize": 12,
             "fontWeight": "bold",
-            "dx": 340,  // Adjust dx here
-            "dy": 260   // Adjust dy here
+            "dx": 340,  
+            "dy": 260   ,
+            "text": {"expr": "'£'+format(datum['GVA_1998'], '.2f')+' bn'"}
+
           },
           "encoding": {
-            "text": {"field": "GVA_1998", "type": "quantitative"},
             "longitude": {"field": "properties.longitude", "type": "quantitative"},
             "latitude": {"field": "properties.latitude", "type": "quantitative"}
           },
@@ -124,7 +174,8 @@
     {
       "title": {
         "text": "FSS GVA Size by UK ITL1 Regions (2022)",
-        "subtitle": ["in 2019 money value (£ billion)"],
+        "subtitle": "in 2019 money value (£ bn)",
+        "font": "Circular Std Book",
         "color": "#122b39E6",
         "subtitleColor": "#676A86",
         "anchor": "start",
@@ -166,13 +217,13 @@
           "mark": {
             "type": "geoshape",
             "stroke": "black",
-            "strokeWidth": 0.5
+            "strokeWidth": 0.2
           },
           "encoding": {
             "color": {
               "field": "GVA_2022",
               "type": "quantitative",
-              "scale": {"scheme": "blues"}
+              "scale": {"scheme": "yellowgreenblue"}
             },
             "tooltip": [
               {"field": "properties.ITL121NM", "type": "nominal", "title": "Region"},
@@ -184,13 +235,14 @@
           "mark": {
             "type": "text",
             "color": "black",
+            "font": "Circular Std Book",
             "fontSize": 12,
             "fontWeight": "bold",
             "dx": 340,  // Adjust dx here
-            "dy": 260   // Adjust dy here
+            "dy": 260,   // Adjust dy here
+            "text": {"expr": "'£'+format(datum['GVA_2022'], '.2f')+' bn'"}
           },
           "encoding": {
-            "text": {"field": "GVA_2022", "type": "quantitative"},
             "longitude": {"field": "properties.longitude", "type": "quantitative"},
             "latitude": {"field": "properties.latitude", "type": "quantitative"}
           },
@@ -199,47 +251,6 @@
           ]
         }
       ],
-      "config": {
-        "font": "Circular Std Book",
-        "mark": {"line": {"interpolate": "linear"}},
-        "view": {"stroke": "transparent", "width": 400, "height": 300},
-        "range": {},
-        "axisX": {
-          "labelColor": "#122b39",
-          "tickColor": "#122b39",
-          "domainColor": "#122b39",
-          "domainOpacity": 0.5,
-          "gridOpacity": 0,
-          "labelFont": "Circular Std Book",
-          "labelAngle": 0,
-          "labelAlign": "center",
-          "labelFontSize": 11,
-          "labelPadding": 5,
-          "tickCount": 10,
-          "tickSize": 0,
-          "title": ""
-        },
-        "axisY": {
-          "labelColor": "#122b39",
-          "labelFont": "Circular Std Book",
-          "tickColor": "#122b39",
-          "domainColor": "#122b39",
-          "gridColor": "#122b39",
-          "gridDash": [1, 5],
-          "gridOpacity": 0.5,
-          "labelPadding": 5,
-          "labelFontSize": 11,
-          "domainOpacity": 0.5,
-          "tickSize": 0,
-          "titleAlign": "left",
-          "titleAngle": 0,
-          "titleBaseline": "bottom",
-          "titleColor": "#122b39",
-          "titleOpacity": 0.9,
-          "titleX": 0,
-          "titleY": -7
-        }
-      }
     }
   ]
 }
