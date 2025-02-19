@@ -43,12 +43,13 @@
       "gridOpacity": 0,
       "labelFont": "Circular Std Book",
       "labelAngle": 0,
-      "labelAlign": "center",
+      "labelAlign": {"expr": "datum.value == 20 ? 'left' : 'center'"},
       "labelFontSize": 11,
       "labelPadding": 5,
       "tickCount": 10,
       "tickSize": 0,
-      "title": ""
+      "title": "", 
+      "labelExpr": "datum.value+'%' + (datum.value == 20 ? ' of GVA' : '')"
     },
     "axisY": {
       "labelColor": "#122b39",
@@ -75,7 +76,11 @@
     {
       "mark": {"type": "bar"},
       "encoding": {
-        "y": {"field": "Sector", "type": "nominal", "sort": "-x", "title": ""},
+        "y": {"field": "Sector", 
+        "axis": {
+          "labelLimit":0
+        },
+        "type": "nominal", "sort": "-x", "title": ""},
         "x": {"field": "GVA 2022 (%)", "type": "quantitative", "title": ""},
         "color": {
           "condition": [
@@ -90,12 +95,13 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": 3
+        "text": {"expr": "datum['GVA 2022 (%)'] + '%'"},
+        "dx": 5
       },
       "encoding": {
         "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
-        "x": {"field": "GVA 2022 (%)", "type": "quantitative"},
-        "text": {"field": "GVA 2022 (%)", "type": "quantitative"}
+        "x": {"field": "GVA 2022 (%)",
+         "type": "quantitative"},
       }
     }
   ],
