@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Monetary financial institutions lending by sector - UK (2024)",
+    "subtitle": ["in £ billions"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "width": 450,
+  "height": 300,
+  "config": {
+    "font": "Circular Std Book",
+    "mark": {"line": {"interpolate": "linear"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#001f3f",
+        "#4269d0",
+        "#efb118",
+        "#ff725c",
+        "#6cc5b0",
+        "#3ca951",
+        "#ff8ab7",
+        "#a463f2",
+        "#97bbf5",
+        "#9c6b4e"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std Book",
+      "labelAngle": 0,
+      "labelAlign": {"expr": "datum.value"},
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": "", 
+      "labelExpr": "'£' + datum.value + 'bn'"
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std Book",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "y": {"field": "Sector", 
+        "axis": {
+          "labelLimit":0
+        },
+        "type": "nominal", "sort": "-x", "title": ""},
+        "x": {"field": "Value", "type": "quantitative", "title": ""},
+        "color": {
+          "condition": [
+            {"test": "datum.Sector === ' Financial intermediation (excl. ICPF)'", "value": "#001f3f"}
+          ],
+          "value": "rgb(169,192,222)"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "text": {"expr": "'£' + datum['Value'] + ' bn'"},
+        "dx": 5
+      },
+      "encoding": {
+        "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
+        "x": {"field": "Value", "type": "quantitative"},
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/MFI_lending2.csv",
+    "format": {"type": "csv"}
+  }
+}
