@@ -63,7 +63,9 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7,
+      "labelExpr": "'£'+datum.value+' bn'"
+
     }
   },
   "data": {
@@ -124,10 +126,7 @@
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
         "text": {"field": "Sector", "type": "nominal"},
-        "color": {
-          "field": "Sector",
-          "type": "nominal"
-        }
+        "color": {"field": "Sector", "type": "nominal"}
       },
       "transform": [
         {"filter": "datum.Year == 1672531200000"}
@@ -137,6 +136,7 @@
       "mark": {
         "type": "text",
         "align": "left",
+        "text": {"expr": "'£'+datum.Value+' bn'"},
         "dx": 5,
         "dy": {
           "expr": "{'Intellectual property products': 3, 'Information communication technology': 3, \"Transport equipment\": -1, \"Buildings and infrastructure\": 11, \"Ownership costs of non-produced assets\": 2, \"Dwellings (excl. land)\": 10}[datum.Sector]"
@@ -145,11 +145,7 @@
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "Value", "type": "quantitative"},
-        "color": {
-          "field": "Sector",
-          "type": "nominal"
-        }
+        "color": {"field": "Sector", "type": "nominal"}
       },
       "transform": [
         {"filter": "datum.Year == 1672531200000"}
