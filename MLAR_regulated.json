@@ -70,7 +70,7 @@
     {
       "mark": {"type": "line"},
       "encoding": {
-        "x": {"field": "Year", "type": "temporal", "title": "Year"},
+        "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Regulated", "type": "quantitative", "title": "Value"},
         "color": {"value": "#4269d0"}
       }
@@ -87,7 +87,7 @@
     {
       "mark": {"type": "line"},
       "encoding": {
-        "x": {"field": "Year", "type": "temporal", "title": "Year"},
+        "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Unregulated", "type": "quantitative", "title": "Value"},
         "color": {"value": "#ff725c"}
       }
