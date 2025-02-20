@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "UK Financial Corporations Financial Assets",
+    "text": "UK financial corporations financial assets",
     "subtitle": ["in £ billions"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
@@ -63,7 +63,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7,
+      "labelExpr": "(datum.value < 0 ? '-' : '')+'£'+abs(datum.value)+' bn'"
     }
   },
   "data": {
@@ -119,6 +120,7 @@
       "mark": {
         "type": "text",
         "align": "left",
+        "text": {"expr": "(datum.Value<0 ? '-':'')+ '£'+format(abs(datum.Value), '.1f')+' bn'"},
         "dx": 5,
         "dy": {
           "expr": "{'Currency and deposits': 10, 'Debt securities': 10, 'Loans': 0, 'Equity and investment fund shares': 18, 'Insurance, pension schemes': 10, 'Financial derivatives': 30}[datum.Category]"
@@ -127,7 +129,6 @@
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "Value", "type": "quantitative", "format": ".1f"},
         "color": {"field": "Category", "type": "nominal"}
       },
       "transform": [
