@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Bank Concentration (assets of 3 largest banks as a share of all banks)",
-    "subtitle": ["in %"],
+    "text": "Bank Concentration",
+    "subtitle": ["share of assets of the 3 largest banks over all banks (%)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -69,7 +69,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7,
+      "labelExpr": "datum.value+' %'"
     }
   },
   "transform": [
