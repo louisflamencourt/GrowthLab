@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "G7 Countries Net Lending/Borrowing (all subjects)",
+    "text": "G7 countries net lending / borrowing (all subjects)",
     "subtitle": ["as a share of GDP (%)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
