@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "UK Mortgage Lending: Securitised vs Unsecuritised",
+    "text": "UK mortgage lending: securitised vs unsecuritised",
     "subtitle": ["in £ billions"],
     "color": "#122b39",
     "subtitleColor": "#676A86",
@@ -58,7 +58,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7, 
+      "labelExpr": "'£'+datum.value+' bn'"
     }
   },
   "data": {
@@ -69,19 +70,37 @@
     {
       "mark": {"type": "line"},
       "encoding": {
-        "x": {"field": "Year", "type": "temporal", "title": "Year"},
+        "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Securitised", "type": "quantitative", "title": "Value"},
+        "color": {"value": "#4269d0"}
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5},
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Year", "type": "temporal"},
+        "y": {"aggregate": {"argmax": "Year"}, "field": "Securitised", "type": "quantitative"},
+        "text": {"value": "Securitised"},
         "color": {"value": "#4269d0"}
       }
     },
     {
       "mark": {"type": "line"},
       "encoding": {
-        "x": {"field": "Year", "type": "temporal", "title": "Year"},
+        "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Unsecuritised", "type": "quantitative", "title": "Value"},
         "color": {"value": "#ff725c"}
       }
-    }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 5},
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Year", "type": "temporal"},
+        "y": {"aggregate": {"argmax": "Year"}, "field": "Unsecuritised", "type": "quantitative"},
+        "text": {"value": "Unsecuritised"},
+        "color": {"value": "#ff725c"}
+      }
+    },
   ],
   "resolve": {"scale": {"y": "shared"}}
 }
