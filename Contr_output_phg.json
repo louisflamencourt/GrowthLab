@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "FSS subsectors contributions to year on year output per hour growth - UK",
-    "subtitle": ["in pp"],
+    "subtitle": ["in percentage points"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -63,7 +63,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7,
+      "labelExpr": "datum.value +' pp'"
     }
   },
   "data": {
@@ -106,6 +107,7 @@
       "mark": {
         "type": "text",
         "align": "left",
+        "text": {"expr": "(datum.Value<0 ? '-':'')+ ''+format(abs(datum.Value), '.1f')+' pp'"},
         "dx": 5,
         "dy": {
           "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 0, 'Activities auxiliary to financial services and insurance activities': 10}[datum.Sector]"
@@ -114,7 +116,6 @@
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "Value", "type": "quantitative"},
         "color": {"field": "Sector", "type": "nominal"}
       },
       "transform": [
