@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Bank cost to income ratio (total costs / total income)",
-    "subtitle": ["in %"],
+    "text": "Bank cost to income ratio (CTI)",
+    "subtitle": ["total costs over total income (%)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -69,7 +69,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7, 
+      "labelExpr": "datum.value+' %'"
     }
   },
   "transform": [
