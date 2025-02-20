@@ -86,7 +86,7 @@
         "x": {"field": "vs1990", "type": "quantitative", "title": ""},
         "color": {
           "condition": [
-            {"test": "datum.Sector === ' Financial and insurance activities'", "value": "#001f3f"}
+            {"test": "datum.Sector === 'Financial and insurance activities'", "value": "#001f3f"}
           ],
           "value": "rgb(169,192,222)"
         }
@@ -95,7 +95,7 @@
     {
       "mark": {
         "type": "text",
-        "align": "datum.value<0 ? 'right' : 'left'",
+        "align": "datum.value<0 ? 'center' : 'left'",
         "baseline": "middle",
         "text": {"expr": "datum['vs1990'] + '%'"},
         "dx": 5
@@ -103,7 +103,7 @@
       "encoding": {
         "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
         "x": {"field": "vs1990", "type": "quantitative"}
-      }
+      },
     }
   ],
   "data": {
