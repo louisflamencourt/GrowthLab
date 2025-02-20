@@ -83,7 +83,12 @@
           "sort": "-x",
           "title": ""
         },
-        "x": {"field": "vs2022", "type": "quantitative", "title": ""},
+        "x": {
+          "field": "vs2022",
+          "type": "quantitative",
+          "title": "",
+          "scale": {"domain": [-80, 120]}
+        },
         "color": {
           "condition": [
             {"test": "datum.Sector === 'Financial and insurance activities'", "value": "#001f3f"}
@@ -95,15 +100,30 @@
     {
       "mark": {
         "type": "text",
-        "align": "datum.value<0 ? 'center' : 'left'",
+        "align": "left",
         "baseline": "middle",
         "text": {"expr": "datum['vs2022'] + '%'"},
         "dx": 5
       },
       "encoding": {
         "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
-        "x": {"field": "vs2022", "type": "quantitative"}
+        "x": {"field": "vs2022", "type": "quantitative"},
+        "opacity": {"condition": {"test": "datum['vs2022'] > 0", "value": 1}, "value": 0}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "text": {"expr": "datum['vs2022'] + '%'"},
+        "dx": -5
       },
+      "encoding": {
+        "y": {"field": "Sector", "type": "nominal", "sort": "-x"},
+        "x": {"field": "vs2022", "type": "quantitative"},
+        "opacity": {"condition": {"test": "datum['vs2022'] < 0", "value": 1}, "value": 0}
+      }
     }
   ],
   "data": {
