@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Productivity: financial and insurance GVA per hour worked (index base 2015=100)",
-    "subtitle": ["in %"],
+    "subtitle": ["index 2015=100"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
