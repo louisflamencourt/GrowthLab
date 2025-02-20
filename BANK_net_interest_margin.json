@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Bank Net Interest Margin (share of revenue in assets)",
-    "subtitle": ["in %"],
+    "text": "Bank net interest margin (NIM)",
+    "subtitle": ["as share of revenue in assets (%)"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -69,7 +69,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7,
+      "labelExpr": "datum.value+' %'"
     }
   },
   "transform": [
@@ -129,7 +130,7 @@
         "align": "left",
         "dx": 5,
         "dy": {
-          "expr": "{\"Italy\": 0, \"United States\": 0, \"Canada\": 0, \"United Kingdom\": 0, \"Spain\": 0, \"France\": 0, \"Japan\": 0, \"Germany\": 0}[datum.Country]"
+          "expr": "{\"Italy\": 3, \"United States\": 0, \"Canada\": -10, \"United Kingdom\": 0, \"Spain\": 0, \"France\": -10, \"Japan\": 0, \"Germany\": 2}[datum.Country]"
         }
       },
       "transform": [
