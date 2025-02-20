@@ -63,7 +63,8 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7,
+      "labelExpr": "(datum.value < 0 ? '-' : '')+'£'+abs(datum.value)+' bn'"
     }
   },
   "data": {
@@ -106,6 +107,7 @@
       "mark": {
         "type": "text",
         "align": "left",
+        "text": {"expr": "'£'+format(abs(datum.Value), '.1f')+' bn'"},
         "dx": 5,
         "dy": {
           "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 20, 'Activities auxiliary to financial services and insurance activities': 0}[datum.Sector]"
@@ -114,7 +116,6 @@
       "encoding": {
         "x": {"field": "Year", "type": "temporal"},
         "y": {"field": "Value", "type": "quantitative"},
-        "text": {"field": "Value", "type": "quantitative"},
         "color": {"field": "Sector", "type": "nominal"}
       },
       "transform": [
