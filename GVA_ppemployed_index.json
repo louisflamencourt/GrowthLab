@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Financial and insurance GVA per person employed (index base 2015=100)",
-    "subtitle": ["in %"],
+    "text": "Financial and insurance GVA per person employed",
+    "subtitle": ["index 2015 = 100"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
     "anchor": "start",
@@ -69,7 +69,7 @@
       "titleColor": "#122b39",
       "titleOpacity": 0.9,
       "titleX": 0,
-      "titleY": -7
+      "titleY": -7, 
     }
   },
   "transform": [
