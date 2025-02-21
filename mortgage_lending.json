@@ -1,0 +1,92 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Monetary financial institutions mortgage lending to households",
+    "subtitle": ["in £ billions"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "width": 450,
+  "height": 300,
+  "config": {
+    "font": "Circular Std Book",
+    "line": {"interpolate": "linear"},
+    "view": {"stroke": "transparent", "continuousWidth": 400, "continuousHeight": 300},
+    "range": {
+      "category": [
+        "#4269d0",
+        "#ff725c"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std Book",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std Book",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7,
+      "labelExpr": "'£'+datum.value+' bn'"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/mortgage_lending.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+        "color": {"range": ["#4269d0"]}
+      }
+    },
+    {
+      "mark": {
+        "type": "text", 
+        "align": "left",
+        "text": {"expr": "'£'+datum.Value+' bn'"}, 
+        "dx": 5, 
+        "dy": -5},
+      "encoding": {
+        "x": {"field": "Date", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+      },
+      "transform": [{"filter": "datum.Date == '1735603200000'"}]
+    }
+  ]
+}
