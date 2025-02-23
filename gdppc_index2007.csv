@@ -1,137 +1,137 @@
-year,countryname,gdp_pcap_index_2007
-2007,Canada,100
-2008,Canada,99.906662
-2009,Canada,95.89032
-2010,Canada,97.761574
-2011,Canada,99.849831
-2012,Canada,100.50769
-2013,Canada,101.76765
-2014,Canada,103.64872
-2015,Canada,103.53226
-2016,Canada,103.43049
-2017,Canada,105.30202
-2018,Canada,106.65087
-2019,Canada,107.10911
-2020,Canada,100.61572
-2021,Canada,105.35007
-2022,Canada,107.41037
-2023,Canada,105.60924
-2007,Germany,100
-2008,Germany,101.10246
-2009,Germany,95.738441
-2010,Germany,99.861366
-2011,Germany,105.55274
-2012,Germany,105.85447
-2013,Germany,105.97371
-2014,Germany,107.82238
-2015,Germany,108.65963
-2016,Germany,110.25941
-2017,Germany,112.83162
-2018,Germany,113.74895
-2019,Germany,114.61391
-2020,Germany,109.83055
-2021,Germany,113.81314
-2022,Germany,114.54338
-2023,Germany,114.94873
-2007,Spain,100
-2008,Spain,99.172348
-2009,Spain,94.593834
-2010,Spain,94.24794
-2011,Spain,93.312668
-2012,Spain,90.580322
-2013,Spain,89.580498
-2014,Spain,91.214836
-2015,Spain,94.992622
-2016,Spain,97.679298
-2017,Spain,100.27263
-2018,Spain,102.22586
-2019,Spain,103.48529
-2020,Spain,91.714798
-2021,Spain,97.740768
-2022,Spain,103.03442
-2023,Spain,104.50294
-2007,France,100
-2008,France,99.821594
-2009,France,96.505394
-2010,France,97.951736
-2011,France,99.856255
-2012,France,99.557091
-2013,France,99.818069
-2014,France,100.33651
-2015,France,101.04692
-2016,France,101.64738
-2017,France,103.46463
-2018,France,104.79123
-2019,France,106.56084
-2020,France,98.312424
-2021,France,104.70425
-2022,France,107.04543
-2023,France,107.6959
-2007,United Kingdom,100
-2008,United Kingdom,98.969215
-2009,United Kingdom,93.684975
-2010,United Kingdom,95.029404
-2011,United Kingdom,95.362999
-2012,United Kingdom,96.131233
-2013,United Kingdom,97.208298
-2014,United Kingdom,99.57769
-2015,United Kingdom,100.98782
-2016,United Kingdom,102.15139
-2017,United Kingdom,104.15504
-2018,United Kingdom,104.98057
-2019,United Kingdom,106.0858
-2020,United Kingdom,94.814804
-2021,United Kingdom,103.03046
-2022,United Kingdom,106.79773
-2023,United Kingdom,106.28439
-2007,Italy,100
-2008,Italy,98.323334
-2009,Italy,92.683884
-2010,Italy,93.812119
-2011,Italy,94.302231
-2012,Italy,91.109146
-2013,Italy,88.421768
-2014,Italy,87.612984
-2015,Italy,88.474174
-2016,Italy,89.7202
-2017,Italy,91.295761
-2018,Italy,92.225578
-2019,Italy,93.695503
-2020,Italy,85.803307
-2021,Italy,93.949608
-2022,Italy,98.528442
-2023,Italy,99.249771
-2007,Japan,100
-2008,Japan,98.72789
-2009,Japan,93.118713
-2010,Japan,96.917236
-2011,Japan,97.120033
-2012,Japan,98.612564
-2013,Japan,100.73507
-2014,Japan,101.16761
-2015,Japan,102.85556
-2016,Japan,103.68391
-2017,Japan,105.50731
-2018,Japan,106.32095
-2019,Japan,106.04221
-2020,Japan,101.94398
-2021,Japan,105.03506
-2022,Japan,106.50957
-2023,Japan,108.82699
-2007,United States,100
-2008,United States,99.17112
-2009,United States,95.772682
-2010,United States,97.541359
-2011,United States,98.349899
-2012,United States,99.865936
-2013,United States,101.27678
-2014,United States,103.07414
-2015,United States,105.33191
-2016,United States,106.47398
-2017,United States,108.40273
-2018,United States,111.03245
-2019,United States,113.38382
-2020,United States,109.86156
-2021,United States,116.33056
-2022,United States,118.8158
-2023,United States,121.6468
+Year,Country,Value
+2007,Canada,100.00
+2008,Canada,99.91
+2009,Canada,95.89
+2010,Canada,97.76
+2011,Canada,99.85
+2012,Canada,100.51
+2013,Canada,101.77
+2014,Canada,103.65
+2015,Canada,103.53
+2016,Canada,103.43
+2017,Canada,105.30
+2018,Canada,106.65
+2019,Canada,107.11
+2020,Canada,100.62
+2021,Canada,105.35
+2022,Canada,107.41
+2023,Canada,105.61
+2007,Germany,100.00
+2008,Germany,101.10
+2009,Germany,95.74
+2010,Germany,99.86
+2011,Germany,105.55
+2012,Germany,105.85
+2013,Germany,105.97
+2014,Germany,107.82
+2015,Germany,108.66
+2016,Germany,110.26
+2017,Germany,112.83
+2018,Germany,113.75
+2019,Germany,114.61
+2020,Germany,109.83
+2021,Germany,113.81
+2022,Germany,114.54
+2023,Germany,114.95
+2007,Spain,100.00
+2008,Spain,99.17
+2009,Spain,94.59
+2010,Spain,94.25
+2011,Spain,93.31
+2012,Spain,90.58
+2013,Spain,89.58
+2014,Spain,91.21
+2015,Spain,94.99
+2016,Spain,97.68
+2017,Spain,100.27
+2018,Spain,102.23
+2019,Spain,103.49
+2020,Spain,91.71
+2021,Spain,97.74
+2022,Spain,103.03
+2023,Spain,104.50
+2007,France,100.00
+2008,France,99.82
+2009,France,96.51
+2010,France,97.95
+2011,France,99.86
+2012,France,99.56
+2013,France,99.82
+2014,France,100.34
+2015,France,101.05
+2016,France,101.65
+2017,France,103.46
+2018,France,104.79
+2019,France,106.56
+2020,France,98.31
+2021,France,104.70
+2022,France,107.05
+2023,France,107.70
+2007,United Kingdom,100.00
+2008,United Kingdom,98.97
+2009,United Kingdom,93.68
+2010,United Kingdom,95.03
+2011,United Kingdom,95.36
+2012,United Kingdom,96.13
+2013,United Kingdom,97.21
+2014,United Kingdom,99.58
+2015,United Kingdom,100.99
+2016,United Kingdom,102.15
+2017,United Kingdom,104.16
+2018,United Kingdom,104.98
+2019,United Kingdom,106.09
+2020,United Kingdom,94.81
+2021,United Kingdom,103.03
+2022,United Kingdom,106.80
+2023,United Kingdom,106.28
+2007,Italy,100.00
+2008,Italy,98.32
+2009,Italy,92.68
+2010,Italy,93.81
+2011,Italy,94.30
+2012,Italy,91.11
+2013,Italy,88.42
+2014,Italy,87.61
+2015,Italy,88.47
+2016,Italy,89.72
+2017,Italy,91.30
+2018,Italy,92.23
+2019,Italy,93.70
+2020,Italy,85.80
+2021,Italy,93.95
+2022,Italy,98.53
+2023,Italy,99.25
+2007,Japan,100.00
+2008,Japan,98.73
+2009,Japan,93.12
+2010,Japan,96.92
+2011,Japan,97.12
+2012,Japan,98.61
+2013,Japan,100.74
+2014,Japan,101.17
+2015,Japan,102.86
+2016,Japan,103.68
+2017,Japan,105.51
+2018,Japan,106.32
+2019,Japan,106.04
+2020,Japan,101.94
+2021,Japan,105.04
+2022,Japan,106.51
+2023,Japan,108.83
+2007,United States,100.00
+2008,United States,99.17
+2009,United States,95.77
+2010,United States,97.54
+2011,United States,98.35
+2012,United States,99.87
+2013,United States,101.28
+2014,United States,103.07
+2015,United States,105.33
+2016,United States,106.47
+2017,United States,108.40
+2018,United States,111.03
+2019,United States,113.38
+2020,United States,109.86
+2021,United States,116.33
+2022,United States,118.82
+2023,United States,121.65
