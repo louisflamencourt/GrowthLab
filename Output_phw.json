@@ -64,7 +64,7 @@
       "titleOpacity": 0.9,
       "titleX": 0,
       "titleY": -7,
-      "labelExpr": "(datum.value < 0 ? '-' : '')+'£'+abs(datum.value)+' bn'"
+      "labelExpr": "'£'+datum.value"
     }
   },
   "data": {
