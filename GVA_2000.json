@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "UK Gross value added (GVA) by sector in 2020",
+    "text": "UK Gross value added (GVA) by sector in 2000",
     "subtitle": ["as a % of total GVA"],
     "color": "#122b39E6",
     "subtitleColor": "#676A86",
