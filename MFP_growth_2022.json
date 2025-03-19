@@ -91,7 +91,7 @@
         },
         "color": {
           "condition": [
-            {"test": "datum.Sector === 'Financial and insurance activities'", "value": "#001f3f"}
+            {"test": "datum.Sector === 'Finance & insurance'", "value": "#001f3f"}
           ],
           "value": "rgb(169,192,222)"
         }
