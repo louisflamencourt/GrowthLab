@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Annual Output (GVA) per hour worked by industry, 2023",
-    "subtitle": "GVAph in GBP, contribution to GVA in %",
+    "subtitle": "GVA per hour worked in GBP",
     "color": "#122b39E6",
     "anchor": "start",
     "dx": 24,
@@ -84,7 +84,7 @@
         },
         "color": {
           "condition": [
-            {"test": "datum['Sector'] === 'Financial and insurance activities'",
+            {"test": "datum['Sector'] === 'Finance & insurance'",
               "value": "#001f3f"},
             {"test": "datum['Sector'] === 'Whole economy'", "value": "#ff725c"}
           ],
