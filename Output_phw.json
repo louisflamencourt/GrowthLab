@@ -107,7 +107,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "text": {"expr": "'£'+format(abs(datum.Value), '.1f')+' bn'"},
+        "text": {"expr": "'£'+format(abs(datum.Value), '.1f')"},
         "dx": 5,
         "dy": {
           "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 20, 'Activities auxiliary to financial services and insurance activities': 0}[datum.Sector]"
