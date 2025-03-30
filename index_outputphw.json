@@ -1,0 +1,126 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "FSS subindustries annual output per hour worked - UK",
+    "subtitle": ["Chain volume measures (CVM), index 2022=100"],
+    "color": "#122b39E6",
+    "subtitleColor": "#676A86",
+    "anchor": "start",
+    "dx": 24,
+    "fontSize": 14,
+    "subtitleFontSize": 12,
+    "subtitlePadding": 4,
+    "offset": 0
+  },
+  "width": 450,
+  "height": 300,
+  "config": {
+    "font": "Circular Std Book",
+    "line": {"interpolate": "linear"},
+    "view": {"stroke": "transparent", "continuousWidth": 400, "continuousHeight": 300},
+    "range": {
+      "category": [
+        "#001f3f",
+        "#4269d0",
+        "#efb118",
+        "#ff725c",
+        "#6cc5b0",
+        "#3ca951",
+        "#ff8ab7"
+      ]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelFont": "Circular Std Book",
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 11,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "labelFont": "Circular Std Book",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 11,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7,
+      "labelExpr": "datum.value"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthLab/refs/heads/main/index_outputphw.csv",
+    "format": {"type": "csv"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line"},
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal", "title": ""},
+        "y": {"field": "Value", "type": "quantitative", "title": ""},
+        "color": {
+          "field": "Sector",
+          "type": "nominal",
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 5,
+        "dy": {
+          "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 0, 'Activities auxiliary to financial services and insurance activities': -20}[datum.Sector]"
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+        "text": {"field": "Sector", "type": "nominal"},
+        "color": {"field": "Sector", "type": "nominal"}
+      },
+      "transform": [
+        {"filter": "datum.Year == 1672531200000"}
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "text": {"expr": "format(abs(datum.Value), '.1f')"},
+        "dx": 5,
+        "dy": {
+          "expr": "{'Financial service activities, except insurance and pension funding':30, 'Insurance, reinsurance and pension funding, except compulsory social security': 10, 'Activities auxiliary to financial services and insurance activities': -10}[datum.Sector]"
+        }
+      },
+      "encoding": {
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "Value", "type": "quantitative"},
+        "color": {"field": "Sector", "type": "nominal"}
+      },
+      "transform": [
+        {"filter": "datum.Year == 1672531200000"}
+      ]
+    }
+  ]
+}
