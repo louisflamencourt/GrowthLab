@@ -68,12 +68,12 @@
     }
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthCoLab/refs/heads/main/Contr_output_phg.csv",
+    "url": "https://raw.githubusercontent.com/louisflamencourt/GrowthLab/refs/heads/main/contr_outputphw.csv",
     "format": {"type": "csv"}
   },
   "layer": [
     {
-      "mark": {"type": "line"},
+      "mark": {"type": "bar", "size": 10},
       "encoding": {
         "x": {"field": "Year", "type": "temporal", "title": ""},
         "y": {"field": "Value", "type": "quantitative", "title": ""},
@@ -88,9 +88,9 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": 5,
+        "dx": 10,
         "dy": {
-          "expr": "{'Financial service activities, except insurance and pension funding': 10, 'Insurance, reinsurance and pension funding, except compulsory social security': -10, 'Activities auxiliary to financial services and insurance activities': 0}[datum.Sector]"
+          "expr": "{'Financial service activities, except insurance and pension funding': 10, 'Insurance, reinsurance and pension funding, except compulsory social security': 10, 'Activities auxiliary to financial services and insurance activities': -10}[datum.Sector]"
         }
       },
       "encoding": {
@@ -108,9 +108,9 @@
         "type": "text",
         "align": "left",
         "text": {"expr": "(datum.Value<0 ? '-':'')+ ''+format(abs(datum.Value), '.1f')+' pp'"},
-        "dx": 5,
+        "dx": 10,
         "dy": {
-          "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 0, 'Activities auxiliary to financial services and insurance activities': 10}[datum.Sector]"
+          "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 20, 'Activities auxiliary to financial services and insurance activities': 0}[datum.Sector]"
         }
       },
       "encoding": {
