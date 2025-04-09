@@ -1,79 +1,79 @@
 Year,Sector,Value
-1998,"Financial service activities, except insurance and pension funding",0.35
-1999,"Financial service activities, except insurance and pension funding",-0.32
-2000,"Financial service activities, except insurance and pension funding",0.09
-2001,"Financial service activities, except insurance and pension funding",0.18
-2002,"Financial service activities, except insurance and pension funding",0.63
-2003,"Financial service activities, except insurance and pension funding",0.36
-2004,"Financial service activities, except insurance and pension funding",0.58
-2005,"Financial service activities, except insurance and pension funding",0.16
-2006,"Financial service activities, except insurance and pension funding",0.63
-2007,"Financial service activities, except insurance and pension funding",0.56
-2008,"Financial service activities, except insurance and pension funding",-0.3
-2009,"Financial service activities, except insurance and pension funding",-0.19
-2010,"Financial service activities, except insurance and pension funding",-0.26
-2011,"Financial service activities, except insurance and pension funding",-0.18
-2012,"Financial service activities, except insurance and pension funding",0.09
-2013,"Financial service activities, except insurance and pension funding",-0.21
-2014,"Financial service activities, except insurance and pension funding",-0.53
-2015,"Financial service activities, except insurance and pension funding",0.07
-2016,"Financial service activities, except insurance and pension funding",0.29
-2017,"Financial service activities, except insurance and pension funding",0.16
-2018,"Financial service activities, except insurance and pension funding",-0.45
-2019,"Financial service activities, except insurance and pension funding",-0.26
-2020,"Financial service activities, except insurance and pension funding",-0.36
-2021,"Financial service activities, except insurance and pension funding",-0.14
-2022,"Financial service activities, except insurance and pension funding",0.07
-2023,"Financial service activities, except insurance and pension funding",-0.32
-1998,"Insurance, reinsurance and pension funding, except compulsory social security",-0.19
-1999,"Insurance, reinsurance and pension funding, except compulsory social security",0.01
-2000,"Insurance, reinsurance and pension funding, except compulsory social security",0.11
-2001,"Insurance, reinsurance and pension funding, except compulsory social security",-0.34
-2002,"Insurance, reinsurance and pension funding, except compulsory social security",-0.39
-2003,"Insurance, reinsurance and pension funding, except compulsory social security",-0.17
-2004,"Insurance, reinsurance and pension funding, except compulsory social security",-0.13
-2005,"Insurance, reinsurance and pension funding, except compulsory social security",0.91
-2006,"Insurance, reinsurance and pension funding, except compulsory social security",-0.92
-2007,"Insurance, reinsurance and pension funding, except compulsory social security",1.15
-2008,"Insurance, reinsurance and pension funding, except compulsory social security",0.08
-2009,"Insurance, reinsurance and pension funding, except compulsory social security",0.03
-2010,"Insurance, reinsurance and pension funding, except compulsory social security",0.41
-2011,"Insurance, reinsurance and pension funding, except compulsory social security",-0.31
-2012,"Insurance, reinsurance and pension funding, except compulsory social security",0.24
-2013,"Insurance, reinsurance and pension funding, except compulsory social security",-0.19
-2014,"Insurance, reinsurance and pension funding, except compulsory social security",0.6
-2015,"Insurance, reinsurance and pension funding, except compulsory social security",-0.31
-2016,"Insurance, reinsurance and pension funding, except compulsory social security",-0.04
-2017,"Insurance, reinsurance and pension funding, except compulsory social security",0.47
-2018,"Insurance, reinsurance and pension funding, except compulsory social security",0.0
-2019,"Insurance, reinsurance and pension funding, except compulsory social security",-0.14
-2020,"Insurance, reinsurance and pension funding, except compulsory social security",0.2
-2021,"Insurance, reinsurance and pension funding, except compulsory social security",0.18
-2022,"Insurance, reinsurance and pension funding, except compulsory social security",0.12
-2023,"Insurance, reinsurance and pension funding, except compulsory social security",-0.06
-1998,Activities auxiliary to financial services and insurance activities,-0.01
-1999,Activities auxiliary to financial services and insurance activities,0.07
-2000,Activities auxiliary to financial services and insurance activities,0.18
-2001,Activities auxiliary to financial services and insurance activities,-0.05
-2002,Activities auxiliary to financial services and insurance activities,0.13
-2003,Activities auxiliary to financial services and insurance activities,0.08
-2004,Activities auxiliary to financial services and insurance activities,-0.05
-2005,Activities auxiliary to financial services and insurance activities,-0.12
-2006,Activities auxiliary to financial services and insurance activities,0.1
-2007,Activities auxiliary to financial services and insurance activities,0.12
-2008,Activities auxiliary to financial services and insurance activities,0.25
-2009,Activities auxiliary to financial services and insurance activities,0.12
-2010,Activities auxiliary to financial services and insurance activities,-0.08
-2011,Activities auxiliary to financial services and insurance activities,-0.2
-2012,Activities auxiliary to financial services and insurance activities,-0.08
-2013,Activities auxiliary to financial services and insurance activities,0.12
-2014,Activities auxiliary to financial services and insurance activities,-0.07
-2015,Activities auxiliary to financial services and insurance activities,0.08
-2016,Activities auxiliary to financial services and insurance activities,0.14
-2017,Activities auxiliary to financial services and insurance activities,0.25
-2018,Activities auxiliary to financial services and insurance activities,0.09
-2019,Activities auxiliary to financial services and insurance activities,0.15
-2020,Activities auxiliary to financial services and insurance activities,0.04
-2021,Activities auxiliary to financial services and insurance activities,0.21
-2022,Activities auxiliary to financial services and insurance activities,0.03
-2023,Activities auxiliary to financial services and insurance activities,-0.03
+1998,Financial services (excl. Insurance),0.35
+1999,Financial services (excl. Insurance),-0.32
+2000,Financial services (excl. Insurance),0.09
+2001,Financial services (excl. Insurance),0.18
+2002,Financial services (excl. Insurance),0.63
+2003,Financial services (excl. Insurance),0.36
+2004,Financial services (excl. Insurance),0.58
+2005,Financial services (excl. Insurance),0.16
+2006,Financial services (excl. Insurance),0.63
+2007,Financial services (excl. Insurance),0.56
+2008,Financial services (excl. Insurance),-0.3
+2009,Financial services (excl. Insurance),-0.19
+2010,Financial services (excl. Insurance),-0.26
+2011,Financial services (excl. Insurance),-0.18
+2012,Financial services (excl. Insurance),0.09
+2013,Financial services (excl. Insurance),-0.21
+2014,Financial services (excl. Insurance),-0.53
+2015,Financial services (excl. Insurance),0.07
+2016,Financial services (excl. Insurance),0.29
+2017,Financial services (excl. Insurance),0.16
+2018,Financial services (excl. Insurance),-0.45
+2019,Financial services (excl. Insurance),-0.26
+2020,Financial services (excl. Insurance),-0.36
+2021,Financial services (excl. Insurance),-0.14
+2022,Financial services (excl. Insurance),0.07
+2023,Financial services (excl. Insurance),-0.32
+1998,Insurance & pensions,-0.19
+1999,Insurance & pensions,0.01
+2000,Insurance & pensions,0.11
+2001,Insurance & pensions,-0.34
+2002,Insurance & pensions,-0.39
+2003,Insurance & pensions,-0.17
+2004,Insurance & pensions,-0.13
+2005,Insurance & pensions,0.91
+2006,Insurance & pensions,-0.92
+2007,Insurance & pensions,1.15
+2008,Insurance & pensions,0.08
+2009,Insurance & pensions,0.03
+2010,Insurance & pensions,0.41
+2011,Insurance & pensions,-0.31
+2012,Insurance & pensions,0.24
+2013,Insurance & pensions,-0.19
+2014,Insurance & pensions,0.6
+2015,Insurance & pensions,-0.31
+2016,Insurance & pensions,-0.04
+2017,Insurance & pensions,0.47
+2018,Insurance & pensions,0
+2019,Insurance & pensions,-0.14
+2020,Insurance & pensions,0.2
+2021,Insurance & pensions,0.18
+2022,Insurance & pensions,0.12
+2023,Insurance & pensions,-0.06
+1998,Auxiliary activities,-0.01
+1999,Auxiliary activities,0.07
+2000,Auxiliary activities,0.18
+2001,Auxiliary activities,-0.05
+2002,Auxiliary activities,0.13
+2003,Auxiliary activities,0.08
+2004,Auxiliary activities,-0.05
+2005,Auxiliary activities,-0.12
+2006,Auxiliary activities,0.1
+2007,Auxiliary activities,0.12
+2008,Auxiliary activities,0.25
+2009,Auxiliary activities,0.12
+2010,Auxiliary activities,-0.08
+2011,Auxiliary activities,-0.2
+2012,Auxiliary activities,-0.08
+2013,Auxiliary activities,0.12
+2014,Auxiliary activities,-0.07
+2015,Auxiliary activities,0.08
+2016,Auxiliary activities,0.14
+2017,Auxiliary activities,0.25
+2018,Auxiliary activities,0.09
+2019,Auxiliary activities,0.15
+2020,Auxiliary activities,0.04
+2021,Auxiliary activities,0.21
+2022,Auxiliary activities,0.03
+2023,Auxiliary activities,-0.03
