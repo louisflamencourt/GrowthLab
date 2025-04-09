@@ -90,7 +90,7 @@
         "align": "left",
         "dx": 10,
         "dy": {
-          "expr": "{'Financial service activities, except insurance and pension funding': 10, 'Insurance, reinsurance and pension funding, except compulsory social security': 10, 'Activities auxiliary to financial services and insurance activities': -10}[datum.Sector]"
+          "expr": "{'Financial services (excl. Insurance)':0, 'Insurance & pensions': 0, 'Auxiliary activities': -20}[datum.Sector]"
         }
       },
       "encoding": {
@@ -110,7 +110,7 @@
         "text": {"expr": "(datum.Value<0 ? '-':'')+ ''+format(abs(datum.Value), '.1f')+' pp'"},
         "dx": 10,
         "dy": {
-          "expr": "{'Financial service activities, except insurance and pension funding': 20, 'Insurance, reinsurance and pension funding, except compulsory social security': 20, 'Activities auxiliary to financial services and insurance activities': 0}[datum.Sector]"
+          "expr": "{'Financial services (excl. Insurance)':10, 'Insurance & pensions': 10, 'Auxiliary activities': -10}[datum.Sector]"
         }
       },
       "encoding": {
